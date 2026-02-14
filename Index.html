@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Badrinarayan Barwale Mahavidyalaya, Jalna</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* ----- Fonts & Reset ----- */
+body {
+  margin:0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background:#f4f6f9;
+  color:#333;
+}
+h3,h4{margin:0 0 8px 0;}
+ul{padding-left:20px;}
+
+/* ----- Header ----- */
+header {
+  background: linear-gradient(90deg,#004aad,#1a73e8);
+  color:#fff;
+  padding:20px;
+  text-align:center;
+  font-size:24px;
+  font-weight:bold;
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ----- Navigation ----- */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  background:#007bff;
+  padding:10px;
+  gap:10px;
+}
+nav button{
+  background: linear-gradient(45deg,#4facfe,#00f2fe);
+  border:none;
+  color:#fff;
+  padding:10px 16px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+nav button:hover{
+  background: linear-gradient(45deg,#00f2fe,#4facfe);
+  transform:translateY(-3px);
+  box-shadow:0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ----- Sections ----- */
+section{display:none;padding:20px;}
+.active{display:block;}
+
+/* ----- Cards ----- */
+.card{
+  background:#fff;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 2px 6px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ----- Images ----- */
+.college-img{
+  width:100%;
+  height:380px;
+  object-fit:cover;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+
+/* ----- Inputs & Buttons ----- */
+input,select{
+  width:100%;
+  padding:10px;
+  margin:8px 0;
+  border-radius:6px;
+  border:1px solid #ccc;
+}
+button.submit{
+  width:100%;
+  padding:12px;
+  background: linear-gradient(45deg,#4facfe,#00f2fe);
+  color:#fff;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+button.submit:hover{
+  background: linear-gradient(45deg,#00f2fe,#4facfe);
+  transform:translateY(-2px);
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* ----- Notice Board ----- */
+.notice{
+  height:80px;
+  overflow:hidden;
+  position:relative;
+}
+.notice p{
+  animation:scroll 8s linear infinite;
+  margin:0;
+  line-height:1.6;
+}
+@keyframes scroll{
+  0%{transform:translateY(100%);}
+  100%{transform:translateY(-100%);}
+}
+
+/* ----- Footer ----- */
+footer{
+  text-align:center;
+  font-size:14px;
+  padding:12px;
+  color:#555;
+}
+
+/* ----- Responsive ----- */
+@media(max-width:768px){
+  nav{flex-direction:column;gap:6px;}
+  .college-img{height:250px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>🏫 Badrinarayan Barwale Mahavidyalaya, Jalna</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('about')">About</button>
+<button onclick="showPage('courses')">Courses</button>
+<button onclick="showPage('faculty')">Faculty</button>
+<button onclick="showPage('student')">Student Registration</button>
+<button onclick="showPage('contact')">Contact</button>
+<button onclick="showPage('login')">Admin</button>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="active">
+<div class="card">
+<img src="IMG_20260123_163511.jpg" class="college-img">
+<h3>Welcome</h3>
+<p>
+Welcome to Badrinarayan Barwale Mahavidyalaya, Jalna.
+We are committed to providing quality higher education with modern infrastructure and experienced faculty.
+</p>
+</div>
+
+<div class="card">
+<h3>📢 Notice Board</h3>
+<div class="notice">
+<p>
+Admissions Open for Academic Year 2026 <br>
+Scholarship Forms Available <br>
+Internal Exams Schedule Released
+</p>
+</div>
+</div>
+
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+<div class="card">
+<h3>About College</h3>
+<p>
+Established in 1993. Affiliated with Dr. Babasaheb Ambedkar Marathwada University, Chatrapati Sambhaji Nagar.
+</p>
+<h3>🎯 Vision & Mission</h3>
+<p><b>Vision:</b> To empower students through quality education and ethical values.</p>
+<p><b>Mission:</b> To promote academic excellence, innovation, and social responsibility.</p>
+</div>
+</section>
+
+<!-- COURSES -->
+<section id="courses">
+<div class="card">
+<h3>📚 Courses Offered (NEP 2020)</h3>
+<p><b>Undergraduate:</b></p>
+<ul>
+<li>B.A</li>
+<li>B.Sc</li>
+<li>B.Sc Computer Science</li>
+<li>B.Sc Biotechnology</li>
+<li>B.Com</li>
+<li>BCA (Science)</li>
+</ul>
+<p><b>Post Graduate:</b></p>
+<ul>
+<li>M.Sc Chemistry</li>
+<li>M.Sc Biotechnology</li>
+</ul>
+</div>
+</section>
+
+<!-- FACULTY -->
+<section id="faculty">
+
+<div class="card">
+<h3>👩‍🏫 Principal</h3>
+<ul>
+<li>Dr. Kavita Prashar – Principal</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💻 Department of BCA (Science)</h3>
+<ul>
+<li>Gayathri N. Kombe – HOD</li>
+<li>Kanchan S. Kayande – Assistant Professor</li>
+<li>Kirti S. Sane – Assistant Professor</li>
+</ul>
+<h4>Subjects:</h4>
+<ul>
+<li>Programming in C</li>
+<li>Data Structures</li>
+<li>DBMS</li>
+<li>Web Technology</li>
+<li>Java Programming</li>
+<li>Python Programming</li>
+<li>Computer Networks</li>
+<li>Software Engineering</li>
+<li>Operating System</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💻 Department of Computer Science</h3>
+<ul>
+<li>Prof. Kazi Mam – HOD</li>
+<li>Dr. Vaishali Shinde – Assistant Professor</li>
+<li>Anjali Salva – Assistant Professor</li>
+</ul>
+<h4>Subjects:</h4>
+<ul>
+<li>Artificial Intelligence</li>
+<li>Cyber Security</li>
+<li>Cloud Computing</li>
+<li>Data Mining</li>
+<li>Machine Learning</li>
+<li>Software Testing</li>
+<li>Computer Graphics</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⚛️ Department of Physics</h3>
+<ul>
+<li>Dr. Kokne Pravin – HOD</li>
+<li>Nilesh Barde – Assistant Professor</li>
+</ul>
+<h4>Subjects:</h4>
+<ul>
+<li>Mechanics</li>
+<li>Thermodynamics</li>
+<li>Quantum Physics</li>
+<li>Electromagnetism</li>
+<li>Optics</li>
+<li>Solid State Physics</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🧪 Department of Chemistry</h3>
+<ul>
+<li>Dr. Omprakash S. Chavan – HOD</li>
+<li>Dr. Ravindra P. Shimpi – Assistant Professor</li>
+<li>Dr. Bhagwansing S. Dobhal – Assistant Professor</li>
+</ul>
+<h4>Subjects:</h4>
+<ul>
+<li>Organic Chemistry</li>
+<li>Inorganic Chemistry</li>
+<li>Physical Chemistry</li>
+<li>Analytical Chemistry</li>
+<li>Environmental Chemistry</li>
+<li>Biochemistry</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🎓 Department of Arts</h3>
+<ul>
+<li>Vilas Bhutekar – Assistant Professor</li>
+<li>Walse R. G. – Assistant Professor</li>
+</ul>
+<h4>Subjects:</h4>
+<ul>
+<li>History</li>
+<li>Political Science</li>
+<li>Economics</li>
+<li>Sociology</li>
+<li>English Literature</li>
+<li>Geography</li>
+</ul>
+</div>
+
+</section>
+
+<!-- STUDENT REGISTRATION -->
+<section id="student">
+<div class="card">
+<h3>Student Registration</h3>
+<input id="sname" placeholder="Student Name">
+<input id="semail" type="email" placeholder="Email">
+<input id="smobile" placeholder="Mobile Number">
+<select id="scourse">
+<option value="">Select Course</option>
+<option>BCA</option>
+<option>B.Sc</option>
+<option>B.Com</option>
+<option>B.A</option>
+</select>
+<label id="captchaText"></label>
+<input id="captchaInput" placeholder="Enter Captcha">
+<button class="submit" onclick="registerStudent()">Register</button>
+<p id="regMsg"></p>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="card">
+<h3>Contact Us</h3>
+<p>
+Badrinarayan Barwale Mahavidyalaya,<br>
+Jalna, Maharashtra – 431203<br>
+Phone: 02482-XXXXX<br>
+Email: bbmjalna@gmail.com<br>
+Office Time: Mon–Sat | 10:00 AM – 5:00 PM
+</p>
+</div>
+</section>
+
+<!-- ADMIN LOGIN -->
+<section id="login">
+<div class="card">
+<h3>Admin Login</h3>
+<input id="username" placeholder="Admin ID">
+<input id="password" type="password" placeholder="Password">
+<button class="submit" onclick="login()">Login</button>
+<p id="loginMsg"></p>
+<p><b>Demo:</b> admin / 12345</p>
+</div>
+</section>
+
+<!-- ADMIN PANEL -->
+<section id="admin">
+<div class="card">
+<h3>Registered Students</h3>
+<div id="studentList"></div>
+<button class="submit" onclick="logout()">Logout</button>
+</div>
+</section>
+
+<footer>© 2026 Badrinarayan Barwale Mahavidyalaya, Jalna</footer>
+
+<script>
+let adminLoggedIn=false;
+let generatedCaptcha=0;
+
+function showPage(page){
+ if(page==="admin" && !adminLoggedIn){ alert("Please login first!"); return; }
+ document.querySelectorAll("section").forEach(sec=>sec.classList.remove("active"));
+ document.getElementById(page).classList.add("active");
+}
+
+function login(){
+ let u=document.getElementById("username").value.trim();
+ let p=document.getElementById("password").value.trim();
+ if(u==="admin" && p==="12345"){ adminLoggedIn=true; loadStudents(); showPage("admin"); }
+ else { document.getElementById("loginMsg").innerHTML="Invalid ID or Password!"; }
+}
+
+function logout(){ adminLoggedIn=false; showPage("home"); }
+
+function generateCaptcha(){
+ let n1=Math.floor(Math.random()*10);
+ let n2=Math.floor(Math.random()*10);
+ generatedCaptcha=n1+n2;
+ document.getElementById("captchaText").innerHTML="Captcha: "+n1+" + "+n2+" = ?";
+}
+generateCaptcha();
+
+function registerStudent(){
+ let name=sname.value.trim();
+ let email=semail.value.trim();
+ let mobile=smobile.value.trim();
+ let course=scourse.value;
+ let captcha=captchaInput.value.trim();
+ if(name==""||email==""||mobile==""||course==""){ regMsg.innerHTML="All fields required!"; return; }
+ if(parseInt(captcha)!==generatedCaptcha){ regMsg.innerHTML="Wrong Captcha!"; generateCaptcha(); return; }
+ let students=JSON.parse(localStorage.getItem("students"))||[];
+ students.push({name,email,course});
+ localStorage.setItem("students",JSON.stringify(students));
+ regMsg.innerHTML="Registration Successful!";
+ sname.value=""; semail.value=""; smobile.value="";
+ scourse.value=""; captchaInput.value=""; generateCaptcha();
+}
+
+function loadStudents(){
+ let students=JSON.parse(localStorage.getItem("students"))||[];
+ let list=document.getElementById("studentList");
+ list.innerHTML="";
+ students.forEach((s,i)=>{ list.innerHTML+="<p>"+(i+1)+". "+s.name+" - "+s.course+" - "+s.email+"</p>"; });
+}
+</script>
+
+</body>
+</html>
